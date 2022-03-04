@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+body{
+    background-color: pink;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5px;
+    color: rgb(255, 88, 116);
+}
+
+header nav ol a{
+    border: 0%;
+    padding: 20px;
+    margin-left: 11%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "imagenes"
+    "texto"
+    "imgp2"
+    "p2";
+}
+
+.img__p2{
+    grid-area: imgp2;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.img__Grid, .imgs{
+    grid-area: imagenes;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.parrafo2{
+    grid-area: p2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    padding: 20px;
+}
+
+@media screen and (min-width: 500px){
+    body{
+        margin-left: 10px;
+        background-color: pink;
+        color: rgb(255, 88, 116);
+        font-family: 'Poppins', sans-serif;
+        font-size: smaller;
+    }
+
+    header nav ol a{
+        border: 0%;
+        padding: 20px;
+        margin-left: 11%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: white;
+    }
+
+    a{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "imagenes"
+        "texto"
+        "imgp2"
+        "p2";
+    }
+
+    .img__p2{
+        grid-area: imgp2;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .img__Grid, .imgs{
+        grid-area: imagenes;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+
+    .parrafo2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (min-width: 700px){
+
+    body{
+        background-color: pink;
+        color: rgb(255, 88, 116);
+        font-family: 'Poppins', sans-serif;
+        font-size: smaller;
+    }
+
+    header nav ol a{
+        background-color: white;
+        border: 1px rgb(255, 88, 116) solid;
+        margin: 0%;
+        border: 0%;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: rgb(255, 88, 116);
+    }
+
+    a{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "imagenes"
+        "texto"
+        "imgp2"
+        "p2";
+    }
+
+    .img__p2{
+        grid-area: imgp2;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .img__Grid, .imgs{
+        grid-area: imagenes;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+
+    .parrafo2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 920px){
+    body{
+        margin: 0;
+        background-color: pink;
+        color: rgb(255, 88, 116);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    header{
+        grid-area: header;
+        background-color: rgb(255, 111, 136);
+        padding: 8px;
+        margin-top: 0px;
+        color: white;
+        position: sticky;
+        top: 0px;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    header nav ol a{
+        background-color: rgb(255, 111, 136);
+        border: none;
+        margin: 0;
+        border: 0%;
+        padding: 15px;
+        margin-left: 13%;
+        text-align: center;
+        display: inline-block;
+        justify-content: center;
+        color: white;
+    }
+    
+    /*section img{
+        height: 300px;
+        border: 20px;
+        border-color: white;
+        border-style: solid;
+        margin-top: 20px;
+        margin-left: 33%;
+    }*/
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1000px 518px;
+        grid-template-areas: 
+        "header header"
+        "imagenes imagenes"
+        "texto texto"
+        "imgp2 imgp2"
+        "p2 p2";
+    }
+    
+    section p{
+        grid-area: texto;
+        margin-top: 30px;
+        align-content: center;
+        margin-left: 20px;
+        color: rgb(255, 88, 116);
+        margin-bottom: 20px;
+    }
+
+    .img__p2{
+        grid-area: imgp2;
+        height: 500px;
+        display: flex;
+        margin-left: 20px;
+    
+    }
+
+    .img__Grid, .imgs{
+        grid-area: imagenes;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 5px;
+        height: 400px;
+    }
+    
+    .parrafo2{
+        font-size: larger;
+    }
+
+}
+    
