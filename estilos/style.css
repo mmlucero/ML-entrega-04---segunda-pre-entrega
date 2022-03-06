@@ -48,6 +48,11 @@ a{
     font-size: 15px;
 }
 
+a:hover{
+    transform: scale(1.2);
+    text-decoration: underline rgb(255, 111, 136);
+}
+
 .header{
     grid-area: header;
     
@@ -108,6 +113,11 @@ a{
         margin-left: 8%;
         font-size: 15px;
     }
+
+    a:hover{
+        transform: scale(1.2);
+        text-decoration: underline rgb(255, 111, 136);
+    }
     
 }
 
@@ -155,6 +165,11 @@ a{
         justify-content: center;
         margin-left: 8%;
         font-size: 20px;
+    }
+
+    a:hover{
+        transform: scale(1.2);
+        text-decoration: underline rgb(255, 111, 136);
     }
     
 }
@@ -209,6 +224,10 @@ a{
         flex-direction: row;
         font-size: 20px;
         margin-inline: 100px;
+    }
+    a:hover{
+        transform: scale(1.2);
+        text-decoration: underline rgb(255, 111, 136);
     }
 
 }
