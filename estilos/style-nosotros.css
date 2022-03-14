@@ -63,7 +63,6 @@ header nav ol a{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    margin-bottom: 20px;
     height: 200px;
 
 }
@@ -73,7 +72,7 @@ header nav ol a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100%;
+    margin-top: 20%;
 }
 
 .parrafo2{
@@ -88,7 +87,7 @@ footer{
     padding: 20px;
 }
 
-@media screen and (min-width: 500px){
+/*@media screen and (min-width: 500px){
     body{
         margin-left: 10px;
         background-color: pink;
@@ -164,9 +163,9 @@ footer{
     }
 
 
-}
+}*/
 
-@media screen and (min-width: 700px){
+/*@media screen and (min-width: 700px){
 
     body{
         background-color: pink;
@@ -241,48 +240,41 @@ footer{
     .parrafo2{
         grid-area: p2;
     }
-}
+}*/
 
 @media screen and (min-width: 920px){
     body{
         margin: 0;
-        background-color: pink;
-        color: rgb(255, 88, 116);
+        background-color: #f5e8e2;
+        color: #f1a9ad;
         font-family: 'Poppins', sans-serif;
     }
     
-    header{
-        grid-area: header;
-        background-color: pink;
-        padding: 20px;
-        margin-top: 0px;
-        color: white;
-        position: sticky;
-        top: 0px;
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
+    .nav-bar {
+        background-color: white;
+        display: flex;
     }
 
-    a:hover{
-        transform: scale(1.2);
-        text-decoration: underline rgb(255, 111, 136);
+    .nav-bar img {
+        width: 8%;
     }
-    
-    header nav ol a{
-        border: none;
-        margin: 0;
-        border: 0%;
-        padding: 15px;
-        text-align: center;
-        display: inline-block;
-        justify-content: center;
-        color: white;
+
+    .nav-bar a {
+        color: #f1a9ad;
+        text-decoration: none;
         font-size: 18px;
+        padding: 15px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8%;
     }
-    
+
+    .nav-bar a:hover {
+        color: #f1a9ad;
+        text-decoration: underline #588eaa;
+        font-size: 19px;
+    }
     
     .grid{
         display: grid;
@@ -305,22 +297,97 @@ footer{
     .img__Grid, .imgs{
         grid-area: imagenes;
         display: flex;
+        flex-direction: row;
     }
 
     .img1, .img2{
-        width: 800px;
+        width: 700px;
+        height: 500px;
         display: flex;
-        margin-left: 20%;
+        margin-left: 3%;
     }
     
     .parrafo2{
         grid-area: p2;
         font-size: larger;
+        margin-bottom: 20px;
     }
 
     .parrafo{
         grid-area: texto;
-        margin-top: 65%;
+        margin-top: 22%;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: white;
+        padding: 50px;
+        color: #f1a9ad;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-areas:
+        "gridC gridL gridR"
+    }
+
+    .gridC {
+        grid-area: gridC;
+    }
+
+    .gridC p a {
+        text-decoration: none;
+        color: #f1a9ad;
+    }
+
+    .gridL {
+        grid-area: gridL;
+    }
+
+    .gridL ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridL ul h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridL a {
+        text-decoration: none;
+        color: #f1a9ad;
+    }
+
+    .gridL a:hover {
+        color: #f1a9ad;
+        text-decoration: underline #588eaa;
+    }
+
+    .gridR {
+        grid-area: gridR;
+    }
+
+    .gridR h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gridR img {
+        width: 50px;
+        display: inline-block;
+        margin-left: 15%;
+
+    }
+
+    .gridR img:hover {
+        transform: scale(1.2);
     }
 
 }
