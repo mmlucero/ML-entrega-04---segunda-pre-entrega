@@ -3,21 +3,382 @@
     padding: 0;
 }
 
-@media (min-width: 920px){
-
-    .grilla{
-        display: grid;
-        grid-template-rows: 18% 60%;
-        grid-template-areas: 
+.grilla {
+    display: grid;
+    grid-template-rows: 18% 60%;
+    grid-template-areas:
         "header"
         "cont";
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: cont;
+}
+
+.carousel-inner {
+    background-color: #f5e8e2;
+}
+
+.carousel-item img {
+    width: 500px;
+}
+
+.nav-bar {
+    background-color: white;
+}
+
+.nav-bar img {
+    width: 15%;
+}
+
+.nav-bar a {
+    color: #f1a9ad;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.nav-bar a:hover {
+    color: #f1a9ad;
+    text-decoration: underline #588eaa;
+    font-size: 17px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    padding: 20px;
+    color: #f1a9ad;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-columns: 50% 90%;
+    grid-template-areas:
+        "gridC gridR"
+        "gridL gridL"
+}
+
+.gridC {
+    grid-area: gridC;
+}
+
+.gridC p a {
+    text-decoration: none;
+    color: #f1a9ad;
+    font-size: 15px;
+}
+
+.gridL {
+    grid-area: gridL;
+}
+
+.gridL ul li {
+    list-style: none;
+}
+
+.gridL a {
+    text-decoration: none;
+    color: #f1a9ad;
+}
+
+.gridL a:hover {
+    color: #f1a9ad;
+    text-decoration: underline #588eaa;
+}
+
+
+.gridR {
+    grid-area: gridR;
+}
+
+.gridR h6 {
+    margin-left: 7%;
+
+}
+
+.gridR img {
+    width: 50px;
+    display: inline-block;
+    margin-left: 5%;
+
+}
+
+.gridR img:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width:500px) {
+    .grilla {
+        display: grid;
+        grid-template-rows: 18% 60%;
+        grid-template-areas:
+            "header"
+            "cont";
     }
 
-    .header{
+    .header {
         grid-area: header;
     }
 
-    .content{
+    .content {
+        grid-area: cont;
+    }
+
+    .carousel-inner {
+        background-color: #f5e8e2;
+    }
+
+    .carousel-item img {
+        width: 800px;
+    }
+
+    .nav-bar {
+        background-color: white;
+    }
+
+    .nav-bar img {
+        width: 15%;
+    }
+
+    .nav-bar a {
+        color: #f1a9ad;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar a:hover {
+        color: #f1a9ad;
+        text-decoration: underline #588eaa;
+        font-size: 19px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: white;
+        padding: 20px;
+        color: #f1a9ad;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-columns: 50% 20% 90%;
+        grid-template-areas:
+            "gridC gridL"
+            "gridR gridR";
+    }
+
+    .gridC {
+        grid-area: gridC;
+    }
+
+    .gridC p a {
+        text-decoration: none;
+        color: #f1a9ad;
+        font-size: 15px;
+    }
+
+    .gridL {
+        grid-area: gridL;
+    }
+
+    .gridL ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridL ul h6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridL a {
+        text-decoration: none;
+        color: #f1a9ad;
+    }
+
+    .gridL a:hover {
+        color: #f1a9ad;
+        text-decoration: underline #588eaa;
+    }
+
+    .gridR {
+        grid-area: gridR;
+    }
+
+    .gridR h6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gridR img {
+        width: 50px;
+        display: inline-block;
+        margin-left: 15%;
+
+    }
+
+    .gridR img:hover {
+        transform: scale(1.2);
+    }
+
+
+
+}
+
+@media (min-width:700px) {
+    .grilla {
+        display: grid;
+        grid-template-rows: 18% 60%;
+        grid-template-areas:
+            "header"
+            "cont";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: cont;
+    }
+
+    .carousel-inner {
+        background-color: #f5e8e2;
+    }
+
+    .carousel-item img {
+        width: 800px;
+    }
+
+    .nav-bar {
+        background-color: white;
+    }
+
+    .nav-bar img {
+        width: 15%;
+    }
+
+    .nav-bar a {
+        color: #f1a9ad;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar a:hover {
+        color: #f1a9ad;
+        text-decoration: underline #588eaa;
+        font-size: 21px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: white;
+        padding: 20px;
+        color: #f1a9ad;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-areas:
+            "gridC gridL gridR"
+    }
+
+    .gridC {
+        grid-area: gridC;
+    }
+
+    .gridC p a {
+        text-decoration: none;
+        color: #f1a9ad;
+    }
+
+    .gridL {
+        grid-area: gridL;
+    }
+
+    .gridL ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridL ul h6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridL a {
+        text-decoration: none;
+        color: #f1a9ad;
+    }
+
+    .gridL a:hover {
+        color: #f1a9ad;
+        text-decoration: underline #588eaa;
+    }
+
+    .gridR {
+        grid-area: gridR;
+    }
+
+    .gridR h6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .gridR img {
+        width: 50px;
+        display: inline-block;
+        margin-left: 5%;
+
+    }
+
+    .gridR img:hover {
+        transform: scale(1.2);
+    }
+
+
+}
+
+@media (min-width: 920px) {
+
+    .grilla {
+        display: grid;
+        grid-template-rows: 18% 60%;
+        grid-template-areas:
+            "header"
+            "cont";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
         grid-area: cont;
     }
 
@@ -65,7 +426,7 @@
         display: grid;
         grid-template-columns: repeat(3, 33%);
         grid-template-areas:
-        "gridC gridL gridR"
+            "gridC gridL gridR"
     }
 
     .gridC {
@@ -127,6 +488,5 @@
     }
 
 
-    
+
 }
-   
