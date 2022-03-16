@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$bgcolor:#f5e8e2;
+$color:#f1a9ad;
+
+$estilo: (
+    tDeco: none,
+    fSize: 16px,
+    dplay: inline-flex,
+    jContent: center,
+    aItems: center,
+    mLeft: 3%,
+);
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grilla {
+    display: grid;
+    grid-template-rows: 18% 60%;
+    grid-template-areas:
+        "header"
+        "cont";
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: cont;
+}
+
+.carousel-inner {
+    background-color: $bgcolor;
+}
+
+.carousel-item img {
+    width: 500px;
+}
+
+.nav-bar {
+    background-color: white;
+
+    img {
+        width: 15%;
+    }
+
+    a {
+        color: $color;
+        text-decoration: map-get($estilo, tDeco);
+        font-size: map-get($estilo , fSize );
+        display: map-get($estilo , dplay );
+        justify-content: map-get($estilo , jContent );
+        align-items: map-get($estilo , aItems );
+        margin-left: map-get($estilo , mLeft );
+    }
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    padding: 20px;
+    color: $color;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-columns: 50% 90%;
+    grid-template-areas:
+        "gridC gridR"
+        "gridL gridL"
+}
+
+.gridC {
+    grid-area: gridC;
+
+    p a {
+        text-decoration: none;
+        color: $color;
+        font-size: 15px;
+    }
+}
+
+
+.gridL {
+    grid-area: gridL;
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color;
+
+        &:hover {
+        color: $color;
+        text-decoration: underline #588eaa;
+        }
+    }
+
+}
+
+.gridR {
+    grid-area: gridR;
+
+    h6 {
+        margin-left: 7%;
+    }
+
+    img {
+        width: 50px;
+        display: inline-block;
+        margin-left: 5%;
+
+       &:hover {
+        transform: scale(1.2);
+       }
+    }
+}
+
+
+@media (min-width:500px) {
+    .grilla {
+        display: grid;
+        grid-template-rows: 18% 60%;
+        grid-template-areas:
+            "header"
+            "cont";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: cont;
+    }
+
+    .carousel-inner {
+        background-color: $bgcolor;
+
+    }
+
+    .carousel-item img {
+        width: 800px;
+    }
+
+    .nav-bar {
+        background-color: white;
+
+        img {
+            width: 15%;
+        }
+
+        a {
+            color: $color;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+            color: $color;
+            text-decoration: underline #588eaa;
+            font-size: 19px;
+            }
+        }
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: white;
+        padding: 20px;
+        color: $color;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-columns: 50% 20% 90%;
+        grid-template-areas:
+            "gridC gridL"
+            "gridR gridR";
+    }
+
+    .gridC {
+        grid-area: gridC;
+
+        p a {
+            text-decoration: none;
+            color: $color;
+            font-size: 15px;
+        }
+    }
+
+    .gridL {
+        grid-area: gridL;
+
+        ul li {
+            @include flex;
+        }
+
+        ul h6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color;
+
+           &:hover {
+            color: $color;
+            text-decoration: underline #588eaa;
+           }
+        }
+
+
+    }
+
+    .gridR {
+        grid-area: gridR;
+
+        h6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        img {
+            width: 50px;
+            display: inline-block;
+            margin-left: 15%;
+
+         &:hover {
+            transform: scale(1.2);
+         }
+        }
+
+
+    }
+
+}
+
+@media (min-width:700px) {
+    .grilla {
+        display: grid;
+        grid-template-rows: 18% 60%;
+        grid-template-areas:
+            "header"
+            "cont";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: cont;
+    }
+
+    .carousel-inner {
+        background-color: $bgcolor;
+    }
+
+    .carousel-item img {
+        width: 800px;
+    }
+
+    .nav-bar {
+        background-color: white;
+
+        img {
+            width: 15%;
+        }
+
+        a {
+            color: $color;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+          &:hover {
+            color: $color;
+            text-decoration: underline #588eaa;
+            font-size: 21px;
+          }
+        }
+
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: white;
+        padding: 20px;
+        color: $color;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-areas:
+            "gridC gridL gridR"
+    }
+
+    .gridC {
+        grid-area: gridC;
+
+        p a {
+            text-decoration: none;
+            color: $color;
+        }
+    }
+
+    .gridL {
+        grid-area: gridL;
+
+        ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul h6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color;
+
+           &:hover {
+            color: $color;
+            text-decoration: underline #588eaa;
+           }
+        }
+
+    }
+
+    .gridR {
+        grid-area: gridR;
+
+        h6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        img {
+            width: 50px;
+            display: inline-block;
+            margin-left: 5%;
+
+           &:hover {
+            transform: scale(1.2);
+           }
+        }
+
+
+    }
+
+
+    @media (min-width: 920px) {
+
+        .grilla {
+            display: grid;
+            grid-template-rows: 18% 60%;
+            grid-template-areas:
+                "header"
+                "cont";
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .content {
+            grid-area: cont;
+        }
+
+        .carousel-inner {
+            background-color: $bgcolor;
+        }
+
+        .carousel-item img {
+            width: 800px;
+            margin-left: 22%;
+        }
+
+        .nav-bar {
+            background-color: white;
+
+            img {
+                width: 8%;
+            }
+
+            a {
+                color: $color;
+                text-decoration: none;
+                font-size: 18px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 8%;
+
+             &:hover {
+                color: $color;
+                text-decoration: underline #588eaa;
+                font-size: 21px;
+             }
+            }
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: white;
+            padding: 20px;
+            color: $color;
+        }
+
+        .gridFooter {
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-areas:
+                "gridC gridL gridR"
+        }
+
+        .gridC {
+            grid-area: gridC;
+
+            p a {
+                text-decoration: none;
+                color: $color;
+            }
+        }
+
+        .gridL {
+            grid-area: gridL;
+
+            ul li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            ul h6 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: $color;
+
+              &:hover {
+                color: $color;
+                text-decoration: underline #588eaa;
+              }
+            }
+        }
+
+        .gridR {
+            grid-area: gridR;
+
+            h6 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            img {
+                width: 50px;
+                display: inline-block;
+                margin-left: 15%;
+
+             &:hover {
+                transform: scale(1.2);
+                    }
+            }
+        }
+    }
+}
